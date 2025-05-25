@@ -1,0 +1,28 @@
+﻿EVALUATE
+EXCEPT (
+    SELECTCOLUMNS ( 'Order-1', "CustomerID", 'Order-1'[CustomerID] ),
+    SELECTCOLUMNS ( 'Customers', "CustomerID", 'Customers'[CustomerID] )
+)
+
+
+
+EVALUATE
+EXCEPT (
+    SELECTCOLUMNS ( 'Order-2', "CustomerID", 'Order-2'[CustomerID] ),
+    SELECTCOLUMNS ( 'Customers', "CustomerID", 'Customers'[CustomerID] )
+)
+
+
+EVALUATE
+EXCEPT (
+    SELECTCOLUMNS ( 'Revenue', "CustomerID", 'Revenue'[CustomerId] ),
+    SELECTCOLUMNS ( 'Order-1', "CustomerId", 'Order-1'[CustomerId] )
+)
+
+
+
+EVALUATE
+EXCEPT (
+    SELECTCOLUMNS ( 'Total Orders', "PlantId", 'Total Orders'[PlantId] ),
+    SELECTCOLUMNS ( 'Plant', "Plant Id", 'Plant'[Plant Id] )
+)
